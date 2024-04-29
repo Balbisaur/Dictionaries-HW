@@ -21,7 +21,7 @@ def display_tickets(status=None):
     if status:
         filtered_tickets = {ticket_id: ticket_info for ticket_id, ticket_info in service_tickets.items() if ticket_info["Status"] == status}
         if filtered_tickets:
-            print(f"Tickets with status '{status}':") #here I am displaying only tickets with the "open" status. 
+            print(f"Tickets with status '{status}':") #here I am displaying tickets with the "open" status. 
             for ticket_id, ticket_info in filtered_tickets.items():
                 print(f"Ticket ID: {ticket_id}, Customer: {ticket_info['Customer']}, Issue: {ticket_info['Issue']}, Status: {ticket_info['Status']}")
         else:
