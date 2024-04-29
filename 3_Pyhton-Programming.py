@@ -15,7 +15,7 @@ def update_status(ticket_id, new_status):
         service_tickets[ticket_id]["Status", "closed"] = new_status
         print(f"Status of ticket {ticket_id} updated to {new_status}.")
     else:
-        print("ticket not available")
+        print("ticket not available")#if ticket isnt found, it will print ticket not available
 
 def display_tickets(status=None):
     if status:
